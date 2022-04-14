@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SVG Editor</title>
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+     <h1>SVG Editor</h1>
+
+     <div class="inputContainer">
+       <input id="input" class="input" type="number" value="1170" oninput="setHeight()"/>
+       <button class="button2" id="reset" onclick="reset()">Reset</button>
+     </div>
+     
+     <div class="svgContainer">
+       <h2 class="svgSize">ViewBox = <span id="svgWidth">1370</span>X<span id="svgHeight">1170</span></h2>
+      <svg id="svg" class="svg" viewbox="0 0 1370 1170"></svg>
+    </div>
+
+ 
+<script src="./js/app.js"></script>
+</body>
+</html>
